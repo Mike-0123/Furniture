@@ -21,7 +21,7 @@ const Home = () => {
         <Cards/>
         <SecondComp/>
         <ObjectActive/>
-        <SellItems/>
+   
         <ByoseComp/>
         <SecondByose/>
         <NewsCombined/>

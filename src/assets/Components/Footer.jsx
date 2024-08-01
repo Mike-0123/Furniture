@@ -1,60 +1,61 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
+
 const Section = () => {
   return (
     <>
-      <div className="bg-footer flex justify-around h-full mt-20">
-        <div className="">
-          <h1 className="uppercase">HOMENEST</h1>
-        </div>
-        <div className="flex-col gap-8">
-          <h1>Menu</h1>
-          <div>
-            <a href="">Home</a>
-          </div>
-          <div>
-            <a href="">About</a>
-          </div>
-          <div>
-            <a href="">Contact</a>
-          </div>
-          <div>
-            <a href="">Buy</a>
-          </div>
+      {/* Footer Section */}
+      <div className="bg-footer p-6 lg:p-8 flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-16 mt-20">
+        {/* Brand Section */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <h1 className="uppercase text-xl lg:text-2xl font-bold">HOMENEST</h1>
         </div>
 
-        <div className="flex-col">
-          <h1>Contact</h1>
-          <div>Email:kaanama@weeeee.com</div>
-          <div>Adrress:Kigali rubavu</div>
-          <div>Lorem ipsum dolor sit.</div>
-          <div>Lorem ipsum dolor sit.</div>
+        {/* Menu Section */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <h2 className="text-lg lg:text-xl font-semibold mb-4">Menu</h2>
+          <a href="#" className="text-base lg:text-lg mb-2 hover:underline">Home</a>
+          <a href="#" className="text-base lg:text-lg mb-2 hover:underline">About</a>
+          <a href="#" className="text-base lg:text-lg mb-2 hover:underline">Contact</a>
+          <a href="#" className="text-base lg:text-lg hover:underline">Buy</a>
         </div>
 
-        <div className="flex-col ">
-          <h1>Social</h1>
-          <div className="flex text-textColor">
-            <div>
+        {/* Contact Section */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <h2 className="text-lg lg:text-xl font-semibold mb-4">Contact</h2>
+          <div className="text-base lg:text-lg mb-2">Email: kaanama@weeeee.com</div>
+          <div className="text-base lg:text-lg mb-2">Address: Kigali rubavu</div>
+          <div className="text-base lg:text-lg mb-2">Lorem ipsum dolor sit.</div>
+          <div className="text-base lg:text-lg">Lorem ipsum dolor sit.</div>
+        </div>
+
+        {/* Social Section */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <h2 className="text-lg lg:text-xl font-semibold mb-4">Social</h2>
+          <div className="flex gap-4 text-2xl lg:text-3xl text-textColor">
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp />
-            </div>
-            <div>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
-            </div>
-            <div>
+            </a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      <hr />
-      <div className=" flex bg-footer pt-8 justify-between">
-        <div className="text-black">
+
+      {/* Footer Bottom Section */}
+      <hr className="my-4 border-gray-300" />
+      <div className="bg-footer p-4 flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
+        <div className="text-base lg:text-lg text-black mb-2 lg:mb-0">
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div className="text-black">
+        <div className="text-base lg:text-lg text-black mb-2 lg:mb-0">
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div className="text-black">
+        <div className="text-base lg:text-lg text-black">
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
       </div>
